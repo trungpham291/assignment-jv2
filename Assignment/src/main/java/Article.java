@@ -1,0 +1,111 @@
+import java.time.LocalDate;
+
+public class Article {
+    private long id;
+    private String BaseUrl;
+    private String Title;
+    private String Description;
+    private String content;
+    private String thumbnail;
+    private LocalDate createdAt;
+    private LocalDate updatedAt;
+    private LocalDate deletedAt;
+    private int status;
+
+    public Article() {
+
+    }
+
+    public Article(long id, String baseUrl, String title, String description, String content, String thumbnail, LocalDate createdAt, LocalDate updatedAt, LocalDate deletedAt, int status) {
+        this.id = id;
+        BaseUrl = baseUrl;
+        Title = title;
+        Description = description;
+        this.content = content;
+        this.thumbnail = thumbnail;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.deletedAt = deletedAt;
+        this.status = status;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getBaseUrl() {
+        return BaseUrl;
+    }
+
+    public void setBaseUrl(String baseUrl) {
+        BaseUrl = baseUrl;
+    }
+
+    public String getTitle() {
+        return Title;
+    }
+
+    public void setTitle(String title) {
+        Title = title;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
+    }
+
+    public LocalDate getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDate createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public LocalDate getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(LocalDate updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public LocalDate getDeletedAt() {
+        return deletedAt;
+    }
+
+    public void setDeletedAt(LocalDate deletedAt) {
+        this.deletedAt = deletedAt;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+}
